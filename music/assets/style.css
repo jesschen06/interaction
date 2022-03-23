@@ -1,12 +1,16 @@
 /* These styles are just to make it easier to see the blocks, initially. */
 
 body {
-	font-family: monospace;
-	padding: 40px;
+	font-family: helvetica;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 0px;
+	padding-right: 0px;
+
 }
 
 a {
-	color: royalblue;
+	color: green;
 }
 
 section,
@@ -52,7 +56,7 @@ figure > *:not(:first-child),
 }
 
 .parts .title {
-	font-size: 24px;
+	font-size: 50px;
 }
 
 .parts .link {
@@ -64,7 +68,7 @@ figure > *:not(:first-child),
 h1{
 	font-family: "ogg";
 	text-align: center;
-	font-size: 40px;
+	font-size: 60px;
 	padding:20px 0;
 	border-bottom: 1px solid black;
 }
