@@ -146,3 +146,17 @@ window.addEventListener('DOMContentLoaded', () => {
 			parseBlocks(data)
 		})
 });
+
+window.onload = () => {
+
+	$('#showLinks').on('click', () => {
+		$('.audio-embed').addClass('hide');
+		$('.link-block').removeClass('hide');
+	})
+
+	$('#showVideo').on('click', () => {
+		$('.link-block').addClass('hide');
+		$('.audio-embed').removeClass('hide');
+	})
+	
+}

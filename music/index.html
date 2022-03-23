@@ -9,18 +9,16 @@
 		<link href="assets/favicon.png" rel="icon">
 	</head>
 	<body>
-
+		<section class="header">
+			<p id="showLinks" class="btn">Links</p>
+			<a href="https://www.are.na/maria-quevedo/music-4crsq3lfkqi" id="channel-url">
+				<h1 id="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
+			</a>
+			<p id="showVideo" class="btn">Playlist</p>
+		</section>
 		<!-- Replace this URL with your channel to connect the API! -->
-		<a href="https://www.are.na/maria-quevedo/music-4crsq3lfkqi" id="channel-url">
-			<h1 id="channel-title"></h1> <!-- The channel title will be inserted inside this h1. -->
-		</a>
+
 		<div id="channel-description"></div> <!-- Same here for the channel description. -->
-		<div class="wrap">
-			<div class="container">
-				<div class="header">
-					<p>Links</p>
-					<p id="path">Playlist</p>
-				</div>
 
 
 		<!-- All the channel “blocks” will be created as children, here. -->
@@ -149,3 +147,4 @@
 
 	</body>
 </html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
