@@ -1,7 +1,7 @@
 /* These styles are just to make it easier to see the blocks, initially. */
 
 body {
-	font-family: helvetica;
+	font-family: Verdana;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	padding-left: 0px;
@@ -10,7 +10,8 @@ body {
 }
 
 a {
-	color: green;
+	color: royalblue;
+	font-size: 18px;
 }
 
 section,
