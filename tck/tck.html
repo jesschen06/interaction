@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>path</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+<body>
+  <div class="wrap">
+    <div class="bg">
+      <img class="circle circle_red" src="img/circle_red.png"/>
+      <img class="circle circle_yellow" src="img/circle_yellow.png"/>
+      <img class="circle circle_yellow2" src="img/circle_yellow.png"/>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <p><span>Can you map out your </span><span class="show"><strong>third culture/ nomadic experience</strong></span><span> and tell me why you moved between two countries?</span></p>
+      </div>
+
+      <div class="main">
+        <div class="content">          
+          <div class="left">
+            <div class="img">
+              <!-- <img src="img/angela1.png"/> -->
+              <img src="img/photo_bg.png"/>
+              <div class="photo">
+                <img src="img/angela.png"/>
+              </div>
+            </div>
+            <div class="star-wrap">
+              <img class="star star1" src="img/star.png"/>
+              <img class="star star2" src="img/star.png"/>
+            </div>
+          </div>
+
+          <div class="right">
+            <p class="desc"><span><strong>Angela:</strong> My parents immigrated from China to the United States in hopes of creating more opportunities for their children. I was born and raised in the States but </span><span class="show"><strong>I moved to China for two years</strong></span><span> for education and personal reasons when I was around 9.</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+
+<script>
+  window.onload = () => {
+    $('.circle').addClass('complete');
+
+    $('.photo').on('mouseover', () => {
+      $('.photo').addClass('scale');
+    })
+
+    $('.photo').on('mouseout', () => {
+      $('.photo').removeClass('scale');
+    })
+  }
+</script>

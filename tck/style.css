@@ -1,0 +1,220 @@
+body {
+  font-size: 18px;
+  font-family: 'CabinetGrotesk-Light';
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Bold';
+  src: url("font/CabinetGrotesk-Bold.ttf") format("ttf"),
+  url("font/CabinetGrotesk-Bold.woff") format("woff"),
+  url("font/CabinetGrotesk-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Light';
+  src: url("font/CabinetGrotesk-Light.ttf") format("ttf"),
+  url("font/CabinetGrotesk-Light.woff") format("woff"),
+  url("font/CabinetGrotesk-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Medium';
+  src: url("font/CabinetGrotesk-Medium.ttf") format("ttf"),
+  url("font/CabinetGrotesk-Medium.woff") format("woff"),
+  url("font/CabinetGrotesk-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk-Regular';
+  src: url("font/CabinetGrotesk-Regular.ttf") format("ttf"),
+  url("font/CabinetGrotesk-Regular.woff") format("woff"),
+  url("font/CabinetGrotesk-Regular.woff2") format("woff2");
+}
+
+img{
+  width: 100%;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 170px 0 50px 0;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.bg .circle {
+  transition: all 0.2s ease-out;
+  transition-delay: 0.2s;
+  transform: scale(0);
+}
+
+.bg .circle.circle_red {
+  transition-delay: 0.5s;
+}
+
+.bg .circle.circle_yellow2 {
+  transition-delay: 0.7s;
+}
+
+.bg .circle.complete {
+  transform: scale(1);
+}
+
+.bg .circle_red {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 150px;
+}
+ 
+.bg .circle_yellow {
+  position: absolute;
+  right: -70px;
+  top: 70px;
+  width: 150px;
+}
+
+.bg .circle_yellow2 {
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+  width: 150px;
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header p {
+  font-size: 48px;
+  margin: 0;
+}
+
+.header p span {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.header p:hover span {
+  opacity: 0;
+}
+
+.header p:hover .show {
+  opacity: 1;
+  color: #F57B51;
+}
+
+strong {
+  font-family: 'CabinetGrotesk-bold';
+}
+
+.main {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container {
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  transition: all 0.3s linear;
+}
+
+.photo {
+  width: 76%;
+  position: absolute;
+  top: 12%;
+  left: 11%;
+  transform: rotate(-4.4deg);
+  overflow: hidden;
+}
+
+.scale img {
+  transform: scale(1.2)
+}
+
+.left {
+  width: 50%;
+  position: relative;
+}
+
+.right {
+  width: 46%;
+}
+
+.right .desc {
+  font-size: 30px;
+}
+
+.right .desc span {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.right .desc:hover span{
+  opacity: 0;
+}
+
+.right .desc:hover .show{
+  opacity: 1;
+  color: #F57B51;
+}
+
+.star-wrap .star {
+  animation: shining 2s linear infinite;
+  width: 30px;
+  transform: scale(0.5);
+  position: absolute;
+  transform-origin: 50% 50%;
+}
+
+.star-wrap .star1 {
+  left: 0;
+  top: 0;
+}
+
+.star-wrap .star2 {
+  right: -40px;
+  bottom: 0;
+  animation-delay: 1s;
+}
+
+@keyframes shining {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.1;
+  }
+
+  10% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  90% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.5);
+    opacity: 0.1;
+  }
+}
